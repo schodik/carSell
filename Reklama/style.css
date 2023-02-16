@@ -1,0 +1,207 @@
+body{
+    background-image: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#car_logo{
+    margin-left: 3%;
+    width: 300px ;
+    position: absolute;
+    
+}
+#logo_top{
+    background-color: #df81bb;
+    align-items: center;
+    border-radius: 60px;
+    height: 200px;
+}
+#input_car{
+    position: absolute;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#myBtnContainer{
+  position: absolute;
+    margin-top: 3.5%;
+    margin-left: 70%;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+button {
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  button {
+    font-weight: 400;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.6em 0.6em;
+    background: #e07ebb;
+    border: 1px solid #c26ea0;
+    border-radius: 0.55em;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+  }
+
+  button:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #df6ab2;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #d163a7, 0 0.625em 0 0 #eb9bcc;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  button:hover {
+    background: #e76ab7;
+    transform: translate(0, 0.25em);
+  }
+  button:hover::before {
+    box-shadow: 0 0 0 2px #e969b8, 0 0.5em 0 0 #d869ad;
+    transform: translate3d(0, 0.5em, -1em);
+  }
+  button:active {
+    background: #df81bb;
+    transform: translate(0em, 0.75em);
+  }
+
+  #cars{
+    display: flex; 
+    justify-content: space-around ;
+    flex-wrap: wrap;
+  }
+  
+  .container{
+    flex-basis: 33.3%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image img{
+    position: relative;
+    margin-top: 3%;
+    border-radius: 30px;
+    margin-bottom: 2%;
+  }
+  .info{
+    display: flex;
+    position: relative;
+    background-color: #df81bb;
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .filterDiv {
+    display: none;
+
+  }
+
+  .show{
+    display: block;
+  }
+
+
+
+
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00898E;
+    border-radius: 10px;
+    transition: background .3s;
+  }
+  .btn:hover {
+    background: #00898E;
+  }
+
+  .popup {
+    position: fixed;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.9);
+    visibility: hidden;
+    opacity: 0;
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity .5s, visibility 0s linear .5s;
+    transition: opacity .5s, visibility 0s linear .5s;
+    z-index: 1;
+  }
+  .popup:target {
+    visibility: visible;
+    opacity: 1;
+    /* cancel visibility transition delay */
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .popup-close {
+    position: absolute;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.9);
+  }
+  .popup .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    color: #000;
+    transition: color .3s;
+    font-size: 2em;
+    line-height: .6em;
+    font-weight: bold;
+  }
+  .popup .close:hover {
+    color: #00E5EE;
+  }
+  
+  .close-popup {
+    background: rgba(0,0,0,.7);
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    /* "delay" the visibility transition */
+    -webkit-transition: opacity .5s, visibility 0s linear .5s;
+    transition: opacity .5s, visibility 0s linear .5s;
+  }
+  .popup:target + .close-popup{  
+    opacity: 1;
+    visibility: visible;
+    /* cancel visibility transition delay */
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }

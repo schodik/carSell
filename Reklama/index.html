@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <title>IvaCar</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="logo_top">
+        <p><img src="./image/logo.png" id="car_logo"></p>
+            <div id="input_car">
+            <input id="entry__input" type="text" placeholder="Поиск авто для оперов🔎" autocomplete="off">
+            <button type="button" onclick="javascript: FindOnPage('entry__input'); return false;">Поиск</button>
+        </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+            <button class="btn" onclick="filterSelection('leg')">Легковые</button>
+            <button class="btn" onclick="filterSelection('vnedorog')">Внедорожники</button>
+            <button class="btn" onclick="filterSelection('tank')">Танки</button>
+        </div>
+    </div>
+    <div id="cars">
+        <div class="filterDiv leg">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/7ka.jpg" width="500px" height="300px" id="7ka">
+                        </div>
+                        <div class="info">
+                        <p><h3>Оперская жига</h3>
+                            <span class="price">87 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                                <div id="popup1" class="popup">
+                                <a href="#" class="close">&times;</a>
+                                <h2>Оформление заказа</h2>
+                                <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                                <input type="text" placeholder="+7 910 000 00 00">
+                                </div>
+                                <a href="#" class="close-popup"></a>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv vnedorog">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/patriot.jpg" width="500px" height="300px" id="patriot">
+                        </div>
+                        <div class="info">
+                        <p><h3>УАЗ Patriot Опер</h3>
+                            <span class="price">777 777<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv leg">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/mark2.png" width="500px" height="300px" id="mark2">
+                        </div>
+                        <div class="info">
+                        <p><h3>Марк б/у под восстановление </h3>
+                            <span class="price">307 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv leg">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/vaz14.jpg" width="500px" height="300px" id="4ka">
+                        </div>
+                        <div class="info">
+                        <p><h3>Оперская тачка бомба</h3>
+                            <span class="price">90 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv tank">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/kor4.jpg" width="500px" height="300px" id="tank">
+                        </div>
+                        <div class="info">
+                        <p><h3>Техника для нормальных мужиков</h3>
+                            <span class="price">900 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="filterDiv leg">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/hlam.jpg" width="500px" height="300px">
+                        </div>
+                        <div class="info">
+                        <p><h3>Tачка бомба</h3>
+                            <span class="price">220 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv leg">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/NorbekCar.jpg" width="500px" height="300px">
+                        </div>
+                        <div class="info">
+                        <p><h3>Машина понаехавших</h3>
+                            <span class="price">666 666<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv tank">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/prikol.jpg" width="500px" height="300px">
+                        </div>
+                        <div class="info">
+                        <p><h3>Танк прикол</h3>
+                            <span class="price">5 000 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="filterDiv leg">
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="product">
+                    <div class="image">
+                        <img src="./image/igorLox.jpg" width="500px" height="300px">
+                    </div>
+                    <div class="info">
+                    <p><h3>Много хавает не едет</h3>
+                        <span class="price">1 300 000<small>р</small></span>
+                        <a href="#popup1" class="btn">купить</a>
+                        <div id="popup1" class="popup">
+                        <a href="#" class="close">&times;</a>
+                        <h2>Оформление заказа</h2>
+                        <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                        <input type="text" placeholder="+7 910 000 00 00">
+                        <input type="button" value="Отправить">
+                        </div>
+                        <a href="#" class="close-popup"></a>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filterDiv vnedorog">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="product">
+                        <div class="image">
+                            <img src="./image/niva.jpg" width="500px" height="300px">
+                        </div>
+                        <div class="info">
+                        <p><h3>Много хавает и летит</h3>
+                            <span class="price">22 300 000<small>р</small></span>
+                            <a href="#popup1" class="btn">купить</a>
+                            <div id="popup1" class="popup">
+                            <a href="#" class="close">&times;</a>
+                            <h2>Оформление заказа</h2>
+                            <p>Для оформления заказа введите ниже свой контактный телефон, с вами свяжется нас менеджер </p>
+                            <input type="text" placeholder="+7 910 000 00 00">
+                            </div>
+                            <a href="#" class="close-popup"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
